@@ -19,4 +19,4 @@ async def healthz():
 
 @app.get("/hello")
 async def hello_world():
-    return {"message": "HelloDevin!"}
+    return {"message": "HelloShun!"}
