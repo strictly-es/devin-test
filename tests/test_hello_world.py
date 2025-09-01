@@ -8,7 +8,7 @@ def test_hello_world_endpoint():
     """Test that the hello world endpoint returns 'HelloWorld !'"""
     response = client.get("/hello")
     assert response.status_code == 200
-    assert response.json() == {"message": "HelloDevin!"}
+    assert response.json() == {"message": "HelloShun!"}
 
 def test_hello_world_endpoint_content_type():
     """Test that the hello world endpoint returns JSON content type"""
@@ -23,4 +23,4 @@ def test_hello_world_endpoint_structure():
     data = response.json()
     assert isinstance(data, dict)
     assert "message" in data
-    assert data["message"] == "HelloDevin!"
+    assert data["message"] == "HelloShun!"
